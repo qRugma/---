@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'pattaya';
+    src: url(/fonts/pattaya.ttf);
+}
+
+@font-face {
+    font-family: 'dudka';
+    src: url(/fonts/Dudka\ Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'dudka';
+    src: url(/fonts/Raleway.ttf);
+}
+
+
+body {
+    margin: 0;
+    font-family: dudka;
+    background-color: #8C8C8C;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    background: #79ccb0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background: #b4eeda;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* дизайн шапки */
+nav {
+    background-color: #79ccb0;
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 13rem;
+    padding-top: 8px;
+}
+
+.nav_links {
+    width: 60%;
+    white-space: nowrap;
+    padding-top: 1.5%;
+    font-size: 150%;
+
+}
+.nav_links>div {
+    text-align: center;
+    width: 100%;
+}
+
+.nav_links>div>div {
+    width: 33%;
+    display: inline-block;
+}
+
+.nav_links>div>div>a {
+    padding-right: 3%;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_btn_href {
+    text-decoration: none;
+}
+
+.btn__call {
+    padding: 20px;
+    /* width: 100%; */
+    height: 100px;
+    position: relative;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__call:hover {
+    background: #b4eeda;
+}
+
+
+.call__image {
+    position: relative;
+    padding-top: 2%;
+    padding-left: 5%;
+    height: 60px;
+}
+
+.call_text {
+    font-size: 150%;
+}
+
+/* конец дизайна */
+
+/* дизайн заголовка */
+header {
+    background-image:
+        linear-gradient(rgba(70, 70, 70, 0.4),
+            rgba(70, 70, 70, 0.6)),
+        url(img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1024px;
+    color: white;
+    text-align: left;
+    padding: 10%;
+    padding-top: 2%;
+}
+
+header>h1 {
+    padding-bottom: 12%;
+    font-size: 105px;
+
+}
+
+header>p {
+    font-size: 40px;
+    text-align: justify;
+}
+
+/* конец дизайна */
+
+/* дизайн услуг */
+.shop {
+    background-color: #79ccb0;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.shop>p {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.shop>.my-rows {
+    padding: 15%;
+    padding-top: 60px;
+    background-color: #8C8C8C;
+    text-align: left;
+    margin-right: 0;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop_card {
+    width: 40%;
+    padding-bottom: 7%;
+}
+
+.shop_card_inner {
+    background-color: white;
+    height: 100%;
+}
+
+.card_info {
+    height: 110px;
+}
+
+.card_info>h5 {
+    font-size: 170%;
+}
+
+.card_title {
+    height: 70px;
+}
+
+.shop_btn {
+    background-color: #79ccb0;
+    border-radius: 50px;
+    margin-top: 2%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.shop_btn:hover {
+    background: #b4eeda;
+}
+
+/* конец дизайна */
+
+/* дизайн контактов */
+
+.consultants {
+    margin: 15%;
+    margin-top: 0%;
+    padding: 3%;
+    background-color: white;
+    text-align: center;
+}
+
+.consultant {
+    background-color: #79ccb0;
+    border-radius: 50px;
+    margin: 3%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    text-align: left;
+}
+
+.consultant_landscape  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.consultant_landscape>img {
+    padding: 5%;
+    width: 40%;
+}
+
+.info>h2 {
+    padding-left: 14%;
+}
+
+.info {
+    position: relative;
+    width: 60%;
+}
+
+.info_text {
+    height: 70%;
+    text-align: left;
+    font-size: 170%;
+}
+
+.info_text>p {
+    margin-bottom: 0px;
+}
+
+.consultant_num_portrait {
+    display: none;
+}
+
+/* конец дизайна */
+
+/* фоточка */
+.partners {
+    text-align: center;
+    margin: 15%;
+}
+
+.partners>img {
+    width: 100%;
+}
+
+/* конец фоточки */
+
+
+/* дизайн рассылки */
+.newsletter {
+    background-image:
+        linear-gradient(rgba(140, 140, 140, 0.3),
+            rgba(140, 140, 140, 0.3)),
+        url(img/news.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15%;
+    display: table;
+    height: 100%;
+}
+
+.newsletter>div {
+    display: table-cell;
+    width: 49%;
+}
+
+.newsletter_text {
+    background-color: rgba(140, 140, 140, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 5%;
+    font-size: 220%;
+}
+
+.input-box {
+    padding-top: 10%;
+}
+
+.input-box>input {
+    width: 100%;
+    background-color: #C8C8C8;
+    border-radius: 50px;
+    padding: 3%;
+    margin-bottom: 3%;
+    border: none;
+    outline: none;
+}
+
+.newsletter_form {
+    background-color: white;
+    padding: 8%;
+}
+
+.newsletter_form>h3 {
+    text-align: center;
+    padding: 5%;
+    background-color: #79ccb0;
+    border-radius: 50px;
+}
+
+.newsletter_form>button {
+    width: 100%;
+    padding: 2%;
+    font-size: 140%;
+    margin-top: 10%;
+    background-color: #79ccb0;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+.newsletter_form>button:hover {
+    background: #b4eeda;
+}
+/* конец дизайна рассылки */
+
+
+/* конец дизайна для мониторов */
+
+
+/* дизайн для планшетов */
+@media screen and (orientation: portrait) {
+
+    .call_text {
+        display: none;
+    }
+
+    /* header */
+    header>h1 {
+        font-size: 80px;
+        padding-bottom: 5%;
+    }
+    
+    header>p {
+        font-size: 30px;
+    }
+
+
+    /* магазин */
+    .my-row {
+        display: block;
+        justify-content: center;
+    }
+    .shop_card {
+        padding: 0%;
+        padding-bottom: 10%;
+        width: 100%;
+    }
+    
+    /* консультанты */
+    .consultant_num_landscape {
+        display: none;
+    }
+    
+    .consultant_num_portrait {
+        display: block;
+        text-align: center;
+    }
+    
+    .info>h2 {
+        padding-left: 9%;
+    }
+    
+    .info_text {
+        height: 70%;
+        text-align: left;
+        font-size: 150%;
+    }
+    
+    /* рассылка */
+    .newsletter_text {
+        font-size: 150%;
+    }
+}
+
+
